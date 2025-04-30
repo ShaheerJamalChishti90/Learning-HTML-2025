@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <hr>
+    <form action="/Chapter 04/data.csv">
+
+        <ul>
+            <!-- username -->
+            <div>
+                <label for="name">Name</label><br>
+                <input id="name" type="text" placeholder="Enter your name"
+                required>
+            </div>
+            <br>
+            <!-- Phone number -->
+            <div>
+                <label for="ph">Phone Number</label><br>
+                <input id="ph" type="tel" placeholder="Enter your phone number"
+                required>
+            </div>
+            <br>
+            <!-- Address -->
+            <div>
+                <!-- <label for="add">Address</label>
+                <input id="add" type="" placeholder="Enter your address here"> -->
+                <label for="mail">Email</label><br>
+                <input id="mail" type="email" placeholder="Enter your email" 
+                required>
+            </div>
+            <br>
+            <!-- Password -->
+            <div>
+                <label for="password">Password</label><br>
+                <input id="password" type="password" placeholder="Enter your password"
+                required>
+            </div>
+            <br>
+            <!--Date of Birth-->
+            <div>
+                <label for="dob">Date of Birth</label><br>  
+                <input id="dob" type="date" placeholder="Enter your Date of Birth"
+                required>
+            </div>
+            <br>
+            <!-- User Gender info using select tag -->
+            <div>
+                <label for="gender">Gender</label><br>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="male">Female</option>
+                    <option value="other">Prefer not to say</option>
+                </select>
+            </div>
+            <br>
+            <!-- Using Radio Tags -->
+            <div>
+                <Label>Select Where are you from:</Label><br>
+                <input type="radio" id="us" name="country" value="us" required>
+                <label for="us">United States</label>
+
+                <input type="radio" id="ca" name="country" value="ca">
+                <label for="ca">Canada</label>
+
+                <input type="radio" id="mx" name="country" value="mx">
+                <label for="mx">Mexico</label>
+            </div>
+            <br>
+            <!-- Using Checkboxes -->
+            <div>
+                <!-- <input type="checkbox" id="html" name="html" value="HTML" required>
+                <label for="html">HTML</label><br>
+
+                <input type="checkbox" id="css" name="css" value="CSS" required>
+                <label for="css">CSS</label><br>
+
+                <input type="checkbox" id="js" name="js" value="JavaScript" required>
+                <label for="js">JavaScript</label><br> -->
+                <input type="checkbox" id="terms" name="terms" value="terms" required>
+                <label for="terms">I agree to the terms and conditions</label><br>
+            </div>
+            <br>
+            <!-- Using Textarea -->
+            <div>
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+            </div><br>
+            <div>
+                <button id="submit" type="submit">submit</button>
+            </div>
+        </ul>
+    </form>
+</body>
+</html>
