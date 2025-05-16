@@ -1,0 +1,121 @@
+<!-- Create an HTML form for a travel website to book a vacation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03.css">
+    <title>Shaheer Travel Group</title>
+</head>
+
+<body>
+    <header>
+        <!-- Company Logo -->
+        <div>
+            <h1>Shaheer Travel Group</h1>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <!-- Customers Basic Info -->
+            <div>
+                <div>
+                    <label for="name">Name</label>
+                    <br>
+                    <input id="name" type="text" placeholder="First Name"> <input id="name" type="text"
+                        placeholder="Last Name">
+                </div>
+                <br>
+                <div>
+                    <label for="ph">Phone</label>
+                    <br>
+                    <input id="ph" type="tel" placeholder="Phone">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input id="email" type="email" placeholder="Email">
+                    <br>
+                    <small>example@gmail.com</small>
+                </div>
+                <br>
+                <div>
+                    <label for="guests">No of Guests</label>
+                    <br>
+                    <input id="guests" type="number" placeholder="eg: 123">
+                </div>
+                <br>
+                <div>
+                    <label for="arrival date">Arrival Date and Time</label>
+                    <br>
+                    <input id="arrival date" type="datetime-local">
+                </div>
+                <br>
+                <div>
+                    <label for="departure date">Departure Date and Time</label>
+                    <br>
+                    <input id="departure date" type="datetime-local">
+                </div>
+                <br>
+                <div>
+                    <label for="room">Select Room Type</label>
+                    <br>
+                    <select name="room-type" id="room-type">
+                        <option value="disabled" selected disabled>Please Select</option>
+                        <option value="">2 People Small</option>
+                        <option value="">3 People Medium</option>
+                        <option value="">4 People (Family) </option>
+                        <option value="">5 People (Family) </option>
+                        <option value="">6 People Drom Room</option>    
+                    </select>
+                </div>
+                <br>
+                <div>
+                     <label for="vc">Select your Vacation City</label>
+                     <br>
+                     <select name="vacation-city" id="vc">
+                        <option value="disabled" selected disabled>Please Select</option>
+                        <option value="khi">Karachi</option>
+                        <option value="lhr">Lahore</option>
+                        <option value="isb">Islamabad</option>
+                        <option value="que">Quetta</option>
+                        <option value="psh">Peshawar</option>
+                     </select>
+                </div>
+                <br>
+                <div>
+                    <label for="pickup">Select your pickup</label>
+                    <br>
+                    <label for="yes">Company Pickup</label>
+                    <input type="radio" name="pickup" id="yes" value="company-pickup">
+                    <label for="no">My Own Pickup</label>
+                    <input type="radio" name="pickup" id="no" value="own-pickup">
+                </div>
+                <br>
+                <div>
+                    <label for="requests">Special Requests?</label>
+                    <br>
+                    <textarea name="requests" id="requests" cols="30" rows="5" placeholder="Your special requests here"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement" value="agreement">
+                    <label for="agreement">I agree to confirm my vacation with the Shaheer Travel Group</label>
+                </div>
+                <br>
+                <div>
+                    <input type="button" value="submit">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div> 
+            <p>We wish you a happy vacation!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
