@@ -1,4 +1,12 @@
-/* styles.css */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: -5cm;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
 
 /* General Body and Typography */
 body {
@@ -9,14 +17,13 @@ body {
     padding: 0;
 }
 
-h1 {
+header {
     margin: 0;
-    padding: 20px;
+    padding: 3px;
     background-color: #333;
     color: #fff;
     text-align: center;
 }
-
 /* Form Container */
 form {
     background-color: #fff;
@@ -25,6 +32,12 @@ form {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
 
 /* Form Inputs */
 label {
@@ -64,7 +77,7 @@ input[type="checkbox"] {
 }
 
 /* Submit Button */
-input[type="button"] {
+input[type="submit"] {
     background-color: #333;
     color: #fff;
     border: none;
@@ -73,8 +86,26 @@ input[type="button"] {
     border-radius: 4px;
 }
 
-input[type="button"]:hover {
-    background-color: #555;
+input[type="submit"]:hover {
+    background-color: #0f100f;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #00f421;
+    padding: 5px;
+}
+
+fieldset {
+    font-weight: bold;
+}
+
+fieldset:hover {
+    border-color: #00f421;
 }
 
 /* Footer */
@@ -82,8 +113,9 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 2px;
+    position: static;
     bottom: 0;
     width: 100%;
+    
 }

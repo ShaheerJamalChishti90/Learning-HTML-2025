@@ -13,9 +13,9 @@
 <body>
     <header>
         <!-- Company Logo -->
-        <div>
-            <h1>Shaheer Travel Group</h1>
-        </div>
+        <span>
+            <h1>SHAHEER TRAVEL GROUP</h1>
+        </span>
     </header>
     <main>
         <form action="">
@@ -24,20 +24,20 @@
                 <div>
                     <label for="name">Name</label>
                     <br>
-                    <input id="name" type="text" placeholder="First Name"> <input id="name" type="text"
+                    <input id="name" type="text" placeholder="First Name" required> <input id="name" type="text"
                         placeholder="Last Name">
                 </div>
                 <br>
                 <div>
                     <label for="ph">Phone</label>
                     <br>
-                    <input id="ph" type="tel" placeholder="Phone">
+                    <input id="ph" type="tel" placeholder="Phone" required>
                 </div>
                 <br>
                 <div>
                     <label for="email">Email</label>
                     <br>
-                    <input id="email" type="email" placeholder="Email">
+                    <input id="email" type="email" placeholder="Email" required>
                     <br>
                     <small>example@gmail.com</small>
                 </div>
@@ -45,11 +45,11 @@
                 <div>
                     <label for="guests">No of Guests</label>
                     <br>
-                    <input id="guests" type="number" placeholder="eg: 123">
+                    <input id="guests" type="number" placeholder="eg: 123" required>
                 </div>
                 <br>
                 <div>
-                    <label for="arrival date">Arrival Date and Time</label>
+                    <label for="arrival date">Arrival Date and Time</label required>
                     <br>
                     <input id="arrival date" type="datetime-local">
                 </div>
@@ -63,7 +63,7 @@
                 <div>
                     <label for="room">Select Room Type</label>
                     <br>
-                    <select name="room-type" id="room-type">
+                    <select name="room-type" id="room-type" required>
                         <option value="disabled" selected disabled>Please Select</option>
                         <option value="">2 People Small</option>
                         <option value="">3 People Medium</option>
@@ -76,7 +76,7 @@
                 <div>
                      <label for="vc">Select your Vacation City</label>
                      <br>
-                     <select name="vacation-city" id="vc">
+                     <select name="vacation-city" id="vc" required>
                         <option value="disabled" selected disabled>Please Select</option>
                         <option value="khi">Karachi</option>
                         <option value="lhr">Lahore</option>
@@ -86,14 +86,11 @@
                      </select>
                 </div>
                 <br>
-                <div>
-                    <label for="pickup">Select your pickup</label>
-                    <br>
-                    <label for="yes">Company Pickup</label>
-                    <input type="radio" name="pickup" id="yes" value="company-pickup">
-                    <label for="no">My Own Pickup</label>
-                    <input type="radio" name="pickup" id="no" value="own-pickup">
-                </div>
+                <fieldset>
+                    <legend>Pickup Option</legend>
+                    <label><input type="radio" name="pickup" value="company-pickup"> Company Pickup</label><br>
+                    <label><input type="radio" name="pickup" value="own-pickup"> My Own Pickup</label>
+                </fieldset>
                 <br>
                 <div>
                     <label for="requests">Special Requests?</label>
@@ -101,12 +98,12 @@
                     <textarea name="requests" id="requests" cols="30" rows="5" placeholder="Your special requests here"></textarea>
                 </div>
                 <div>
-                    <input type="checkbox" name="agreement" id="agreement" value="agreement">
+                    <input type="checkbox" name="agreement" id="agreement" value="agreement" required>
                     <label for="agreement">I agree to confirm my vacation with the Shaheer Travel Group</label>
                 </div>
                 <br>
                 <div>
-                    <input type="button" value="submit">
+                    <input type="submit" value="submit">
                 </div>
             </div>
         </form>
