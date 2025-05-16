@@ -10,5 +10,23 @@
             tbody
                 tr
                 td
-        colspan
+            colspan
+        Forms
+            Label
+            Inputs
+                Types of Inputs
+                    text
+                    tel
+                    number
+                    email
+                    password
+                    radio
+                    checkbox
+            Select
+            Textarea
+            Submit-Button        
+        Videos in HTML
+            video tag
+            source tag
+            iframe
             
